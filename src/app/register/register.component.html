@@ -1,0 +1,31 @@
+<div class="container d-flex justify-content-center shadow-sm p-3 mb-5 bg-white rounded" id="main-container">
+  <div class="col-md-6">
+    <form #addForm="ngForm" (ngSubmit)="register(addForm.value)">
+      <div class="form-group">
+        <label for="name">Prénom</label>
+        <input type="text" ngModel name="firstname" class="form-control" id="firstname" placeholder="Prénom" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Nom</label>
+        <input type="text" ngModel name="lastname" class="form-control" id="lastname" placeholder="Nom" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Pseudo</label>
+        <input type="text" ngModel name="username" class="form-control" id="username" placeholder="Pseudo" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Email</label>
+        <input type="email" ngModel name="email" class="form-control" id="email" placeholder="Email" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Mot de passe</label>
+        <input type="password" ngModel name="password" class="form-control" id="password" placeholder="Mot de passe" required>
+      </div>
+
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-warning" >S'inscrire</button>
+      </div>
+      </form>
+  </div>
+
+</div>

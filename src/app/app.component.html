@@ -1,0 +1,26 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm p-3 mb-5 bg-body rounded">
+  <div class="container">
+    <div class="row">
+      <div class="d-flex justify-content-between">
+        <a routerLink="/" class="navbar-brand"> Spring Article blog</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarColor02">
+           <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link">Article</a>
+              </li>
+              <li class="nav-item active px-3">
+                <a routerLink="/login" class="nav-link btn btn-success" >Connexion </a>
+              </li>
+              <li class="nav-item active">
+                <a routerLink="/register" class="nav-link btn btn-warning" >Inscription </a>
+              </li>
+           </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+<router-outlet></router-outlet>
